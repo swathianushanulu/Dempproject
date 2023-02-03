@@ -1,0 +1,24 @@
+INFO  - 2023-02-02 11:25:04.584; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-02 11:32:09.221; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-02 12:02:08.182; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-02 12:04:12.669; com.sat.testUtil.Log; pass
+INFO  - 2023-02-02 12:04:12.670; com.sat.testUtil.Log; Automation Tester 4 exist in the list
+INFO  - 2023-02-02 17:06:02.782; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-02 17:07:59.720; com.sat.testUtil.Log; pass
+INFO  - 2023-02-02 17:07:59.721; com.sat.testUtil.Log; Automation Tester 7 exist in the list
+INFO  - 2023-02-02 18:02:15.918; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-02 18:15:43.358; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-02 18:26:47.092; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-02 18:29:00.461; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-02 18:33:38.751; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-02 18:35:40.820; com.sat.testUtil.Log; pass
+INFO  - 2023-02-02 18:35:40.820; com.sat.testUtil.Log; Automation Tester 9 exist in the list
+INFO  - 2023-02-02 18:51:37.826; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-02 18:53:35.130; com.sat.testUtil.Log; pass
+INFO  - 2023-02-02 18:53:35.131; com.sat.testUtil.Log; Demo Automation exist in the list
+INFO  - 2023-02-02 19:01:59.277; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-03 10:31:29.856; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-03 10:42:29.066; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-03 10:52:45.488; com.sat.testUtil.Log; Option is == New
+INFO  - 2023-02-03 10:54:43.423; com.sat.testUtil.Log; pass
+INFO  - 2023-02-03 10:54:43.423; com.sat.testUtil.Log; Sales force1 exist in the list
