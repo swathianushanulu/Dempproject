@@ -38,9 +38,10 @@ public class LeadCreationLGSteps {
 	
 	@Then("user fill {string} field as {string}")
 	public void user_fill_field_as(String string, String Topic) throws InterruptedException {
+
 		leadcreationpage.enterTopic(Topic);
-		
 		Thread.sleep(1000);
+		
 	}
 
 	@Then("user fill {string} field As {string}")
@@ -50,6 +51,7 @@ public class LeadCreationLGSteps {
 
 	@Then("user click Save")
 	public void user_click() throws InterruptedException {
+		Thread.sleep(1000);
 		leadcreationpage.clicksave();
 	}
 	@Then("user click Qualify Bpf stage")
@@ -58,7 +60,7 @@ public class LeadCreationLGSteps {
 		leadcreationpage.clickqualifybpf();
 		
 	}
-	@Then("user check the Identify Decision maker field field")
+	@Then("user check the Identify Decision maker field")
 	public void user_check_identify_decision_maker() throws InterruptedException{
 		leadcreationpage.checkidentifydecisionmaker();
 	}
@@ -68,7 +70,13 @@ public class LeadCreationLGSteps {
 	public void user_click_Qualify() throws InterruptedException {
 		leadcreationpage.clickqualify();
 	}
+	@Then("user click on {string} lead")
+	public void user_click_on_lead(String leadName) {
+		leadcreationpage.clickonlead(leadName);
+	}
 	
+	
+
 	@Then("user validates {string} is showing in the {string} list")
 	public void user_validates_Lead_is_showing_in_the_list(String string,String string2) throws InterruptedException {
 	
@@ -85,4 +93,15 @@ public class LeadCreationLGSteps {
 	assertion.CheckAssertionTrue(foundIt.size()!=0, string);
 	//assertion.CheckAssertionTrue(driver.findElement(By.xpath("//div[@class='ag-body-viewport ag-layout-normal ag-row-no-animation']")).getAttribute("textContent").contains(string), string);
 }
+	@Then("user validates {string} under customer")
+	public void user_validates_entity_in_the_list(String string){
+		List<WebElement> foundIt = driver.findElements(By.xpath("//li[@aria-label='"+string+"']"));
+		assertion.CheckAssertionTrue(foundIt.size()!=0, string);
+		
+	}
+	@Then("user validates {string} heading view")
+	public void user_validates_heading_view(String heading){
+		List<WebElement> foundIt = driver.findElements(By.xpath("//h1[@title='"+heading+"']"));
+		assertion.CheckAssertionTrue(foundIt.size()!=0, heading);
+	}
 }

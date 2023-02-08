@@ -42,10 +42,10 @@ public class LoginPageSteps {
 	String workingDir = System.getProperty("user.dir");
 	
 
-	@Given("User login into L&G CRM page")
-	public void user_navigates_to_CRM_login_page() throws Exception {
+	@Given("User login into D365 page")
+	public void user_navigates_to_D365_login_page() throws Exception {
 		try {
-			System.out.println("CRM Login Page");
+			System.out.println("D365 Login Page");
 			Thread.sleep(2000);
 			testbase.UrlLaunch();
 			prop = new Properties();

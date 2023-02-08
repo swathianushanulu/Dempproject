@@ -30,6 +30,7 @@ public class LeadsCreationPage {
 	public By EnterlastName = By.xpath("//input[@aria-label='Last Name']");
 	public By clickSave = By.xpath("//button[@aria-label='Save (CTRL+S)']");
 	public By clickQualifyBpf = By.xpath("//div[text()='Qualify']");
+	
 	public By checkIdentifyDecisionMaker = By.xpath("//input[contains(@aria-label,'Identify Decision Maker')]");
 	public By clickQualify = By.xpath("//button[@aria-label='Qualify']");
 	
@@ -87,7 +88,9 @@ public class LeadsCreationPage {
 			e.printStackTrace();
 		}
 	}
-	
+	public void clickonlead(String leadName) {
+		driver.findElement(By.xpath("//span[text()='"+leadName+"']")).click();
+	}
 	
 	
 
