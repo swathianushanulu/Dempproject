@@ -54,33 +54,54 @@ public class LeadCreationLGSteps {
 		Thread.sleep(1000);
 		leadcreationpage.clicksave();
 	}
-	@Then("user click Qualify Bpf stage")
-	public void user_click_Qualify_BPF() throws InterruptedException{
-        Thread.sleep(1000);
-		leadcreationpage.clickqualifybpf();
-		
-	}
-	@Then("user check the Identify Decision maker field")
-	public void user_check_identify_decision_maker() throws InterruptedException{
-		leadcreationpage.checkidentifydecisionmaker();
-	}
-	
-	
-	@Then("user click Qualify")
-	public void user_click_Qualify() throws InterruptedException {
-		leadcreationpage.clickqualify();
-	}
 	@Then("user click on {string} lead")
 	public void user_click_on_lead(String leadName) {
 		leadcreationpage.clickonlead(leadName);
 	}
 	
+	@Then("user click {string} bpf stage")
+	public void user_click_bpf_stage(String stageStatus) throws InterruptedException{
+        Thread.sleep(1000);
+		leadcreationpage.clickstagebpf(stageStatus);
+		
+	}
+	@Then("user check the {string} field")
+	public void user_check_field(String fieldName) throws InterruptedException {
+
+		leadcreationpage.clickcheckfield(fieldName);
+		Thread.sleep(1000);
+		
+	}
 	
+	@Then("user click Qualify")
+	public void user_click_Qualify() throws InterruptedException {
+		leadcreationpage.clickqualify();
+	}
+	
+	
+	@Then("user click {string} opportunity")
+	public void user_click_on_opportuinity(String oportuinityName) {
+		leadcreationpage.clickonopportunity(oportuinityName);
+	}
+	
+	
+	@Then("user click on Next Stage button under Develop BPF")
+	public void user_click_Next_stage_under_develop() throws InterruptedException {
+		leadcreationpage.clicknextstage();
+	}
+	@Then("user click on Next Stage under Propose BPF")
+	public void user_click_Next_stage_under_propose() throws InterruptedException {
+		leadcreationpage.clicknextstage();
+	}
+	@Then("user click on finish")
+	public void user_click_finish()  throws InterruptedException {
+		leadcreationpage.clickfinish();
+	}
 
 	@Then("user validates {string} is showing in the {string} list")
 	public void user_validates_Lead_is_showing_in_the_list(String string,String string2) throws InterruptedException {
 	
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 	//actions.click(driver.findElement(By.xpath("//div[@aria-rowindex='1']//div[@aria-colindex='2']"))).build().perform();
 		actions.click(driver.findElement(By.xpath("(//div[@role='button']//i)[1]"))).build().perform();
 		Thread.sleep(1000);
@@ -104,4 +125,5 @@ public class LeadCreationLGSteps {
 		List<WebElement> foundIt = driver.findElements(By.xpath("//h1[@title='"+heading+"']"));
 		assertion.CheckAssertionTrue(foundIt.size()!=0, heading);
 	}
+	
 }
